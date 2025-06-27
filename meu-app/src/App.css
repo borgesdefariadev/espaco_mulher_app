@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Playfair Display", serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .app {
@@ -12,17 +12,35 @@
   flex-direction: column;
 }
 
+.logo-link {
+  width: 1rem;
+  height: auto;
+  min-width: 1.5rem;
+  margin: 0.5rem 3rem;
+}
+
 .main-content {
   flex: 1;
   padding: 2rem;
 }
 
 .btn {
+  position: absolute;
+  white-space: nowrap;
+  min-width: 8%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-display: auto;
+  position: relative;
+  font-size: 1.5rem;
+  align-items: flex-end;
+  justify-content: center;
+  display: flex;
   background-color: #b595a0;
+  margin: 2 86 2 2;
   color: white;
   border: none;
   padding: 0.5rem 1rem;
-  border-radius: 4px;
+  border-radius: 100px;
   cursor: pointer;
   transition: background-color 0.3s;
 }

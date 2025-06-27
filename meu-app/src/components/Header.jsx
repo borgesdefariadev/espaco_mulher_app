@@ -2,16 +2,48 @@ import { Link } from "react-router-dom";
 
 const Header = ({ toggleAbout }) => {
   return (
-    <header className="header" style={{ backgroundColor: "#E0D0D0" }}>
-      <div className="header-content">
-        <Link to="/" className="logo-link">
-          <img src="" alt="" className="logo" style={{ height: "80px" }} />
-        </Link>
-        <h1 className="store-name">Espaço Mulher</h1>
-        <button onClick={toggleAbout} className="about-btn btn">
-          Sobre Nós
-        </button>
-      </div>
+    <header
+      className="header"
+      style={{
+        backgroundColor: "#E0D0D0",
+        width: "100%",
+        height: "4rem",
+        display: "flex",
+        justifyContent: "space-between", // Distribui os itens nas extremidades
+        alignItems: "center", // Centraliza verticalmente
+        padding: "0 1rem", // Adiciona um pouco de espaço nas laterais
+      }}
+    >
+      {/* Logo no canto esquerdo */}
+      <Link
+        to="/sua-rota"
+        onClick={(e) => {
+          e.preventDefault();
+          window.location.href = "/"; // Isso causará um recarregamento
+        }}
+        className="logo-link"
+      >
+        <img
+          src="logo.png"
+          alt="bijoux"
+          className="logo"
+          style={{
+            height: "60px",
+            marginLeft: "-20px", // Ajuste fino para alinhamento visual
+          }}
+        />
+      </Link>
+
+      {/* Botão no canto direito */}
+      <button
+        onClick={toggleAbout}
+        className="btn"
+        style={{
+          marginRight: "1rem", // Espaçamento do canto direito
+        }}
+      >
+        Sobre Nós
+      </button>
     </header>
   );
 };

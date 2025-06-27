@@ -4,32 +4,33 @@ import ProductCard from "./ProductCard";
 const NavTabs = ({ activeTab, setActiveTab }) => {
   // Dados de exemplo para os produtos
   const products = {
-    aneis: [
-      { id: 1, name: "Anel de Diamante", image: "/aneis/anel1.jpg" },
-      { id: 2, name: "Anel de Rubi", image: "/aneis/anel2.jpg" },
-      { id: 3, name: "Anel de Ouro", image: "/aneis/anel3.jpg" },
-      { id: 4, name: "Anel de Prata", image: "/aneis/anel4.jpg" },
-      { id: 5, name: "Anel de Prata", image: "/aneis/anel5.jpg" },
+    anéis: [
+      { id: 1, name: "Anel", image: "/aneis/anel1.jpg" },
+      { id: 2, name: "Anel", image: "/aneis/anel2.jpg" },
+      { id: 3, name: "Anel", image: "/aneis/anel3.jpg" },
+      { id: 4, name: "Anel", image: "/aneis/anel4.jpg" },
     ],
     colares: [
-      { id: 1, name: "Colar de Pérolas", image: "/colares/colar1.jpg" },
-      { id: 2, name: "Colar de Diamante", image: "/colares/colar2.jpg" },
-      { id: 3, name: "Colar de Ouro", image: "/colares/colar3.jpg" },
+      { id: 1, name: "Colar", image: "/colares/colar1.jpg" },
+      { id: 2, name: "Colar", image: "/colares/colar2.jpg" },
+      { id: 3, name: "Colar", image: "/colares/colar3.jpg" },
+      { id: 4, name: "Colar", image: "/colares/colar4.jpg" },
     ],
     brincos: [
-      { id: 1, name: "Brincos de Prata", image: "/brincos/brinco1.jpg" },
-      { id: 2, name: "Brincos de Ouro", image: "/brincos/brinco2.jpg" },
-      { id: 3, name: "Brincos de Diamante", image: "/brincos/brinco3.jpg" },
-      { id: 4, name: "Brincos de Pedra", image: "/brincos/brinco4.jpg" },
+      { id: 1, name: "Brinco", image: "/brincos/brinco1.jpg" },
+      { id: 2, name: "Brinco", image: "/brincos/brinco2.jpg" },
+      { id: 3, name: "Brinco", image: "/brincos/brinco3.jpg" },
+      { id: 4, name: "Brinco", image: "/brincos/brinco4.jpg" },
     ],
     pulseiras: [
-      { id: 1, name: "Pulseira de Ouro", image: "/pulseiras/pulseira1.jpg" },
-      { id: 2, name: "Pulseira de Prata", image: "/pulseiras/pulseira2.jpg" },
+      { id: 1, name: "Pulseira", image: "/pulseiras/pulseira1.jpg" },
+      { id: 2, name: "Pulseira", image: "/pulseiras/pulseira2.jpg" },
       {
         id: 3,
-        name: "Pulseira de Diamante",
+        name: "Pulseira",
         image: "/pulseiras/pulseira3.jpg",
       },
+      { id: 4, name: "Pulseira", image: "/pulseiras/pulseira4.jpg" },
     ],
   };
 
@@ -79,13 +80,15 @@ const NavTabs = ({ activeTab, setActiveTab }) => {
         display: "flex",
         flexDirection: "column",
         minHeight: "100vh",
-        padding: "2rem 0",
+        padding: "1px 0",
         alignItems: "center",
       }}
     >
       <div
         className="tabs"
         style={{
+          width: "100%",
+          height: "2.5rem",
           display: "flex",
           justifyContent: "center",
           marginBottom: "2rem",
