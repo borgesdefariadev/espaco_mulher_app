@@ -5,32 +5,32 @@ const NavTabs = ({ activeTab, setActiveTab }) => {
   // Dados de exemplo para os produtos
   const products = {
     anéis: [
-      { id: 1, name: "Anel", image: "/aneis/anel1.jpg" },
-      { id: 2, name: "Anel", image: "/aneis/anel2.jpg" },
-      { id: 3, name: "Anel", image: "/aneis/anel3.jpg" },
-      { id: 4, name: "Anel", image: "/aneis/anel4.jpg" },
+      { id: 1, name: "Trevo de Quatro folhas", image: "/aneis/anel1.jpg" },
+      { id: 2, name: "Anel Gold Circle", image: "/aneis/anel2.jpg" },
+      { id: 3, name: "Anéis Gold variados", image: "/aneis/anel3.jpg" },
+      { id: 4, name: "Anéis Silver variados", image: "/aneis/anel4.jpg" },
     ],
     colares: [
-      { id: 1, name: "Colar", image: "/colares/colar1.jpg" },
-      { id: 2, name: "Colar", image: "/colares/colar2.jpg" },
-      { id: 3, name: "Colar", image: "/colares/colar3.jpg" },
-      { id: 4, name: "Colar", image: "/colares/colar4.jpg" },
+      { id: 1, name: "Colar Gold Ivory", image: "/colares/colar1.jpg" },
+      { id: 2, name: "Colar old Mirror", image: "/colares/colar2.jpg" },
+      { id: 3, name: "Conjunto Full Moon", image: "/colares/colar3.jpg" },
+      { id: 4, name: "Colares Heart", image: "/colares/colar4.jpg" },
     ],
     brincos: [
-      { id: 1, name: "Brinco", image: "/brincos/brinco1.jpg" },
-      { id: 2, name: "Brinco", image: "/brincos/brinco2.jpg" },
-      { id: 3, name: "Brinco", image: "/brincos/brinco3.jpg" },
-      { id: 4, name: "Brinco", image: "/brincos/brinco4.jpg" },
+      { id: 1, name: "Brinco Nord Circle", image: "/brincos/brinco1.jpg" },
+      { id: 2, name: "Brinco HeartSteel", image: "/brincos/brinco2.jpg" },
+      { id: 3, name: "Brincos Gold", image: "/brincos/brinco3.jpg" },
+      { id: 4, name: "Brincos Heart", image: "/brincos/brinco4.jpg" },
     ],
     pulseiras: [
-      { id: 1, name: "Pulseira", image: "/pulseiras/pulseira1.jpg" },
-      { id: 2, name: "Pulseira", image: "/pulseiras/pulseira2.jpg" },
+      { id: 1, name: "Pulseira Butterfly", image: "/pulseiras/pulseira1.jpg" },
+      { id: 2, name: "Pulseira Stripes", image: "/pulseiras/pulseira2.jpg" },
       {
         id: 3,
-        name: "Pulseira",
+        name: "Bracelete Shiny",
         image: "/pulseiras/pulseira3.jpg",
       },
-      { id: 4, name: "Pulseira", image: "/pulseiras/pulseira4.jpg" },
+      { id: 4, name: "Pulseira Butterfly", image: "/pulseiras/pulseira4.jpg" },
     ],
   };
 
@@ -77,6 +77,7 @@ const NavTabs = ({ activeTab, setActiveTab }) => {
     <div
       className="main-content"
       style={{
+        userSelect: "none",
         display: "flex",
         flexDirection: "column",
         minHeight: "100vh",
@@ -103,6 +104,7 @@ const NavTabs = ({ activeTab, setActiveTab }) => {
             }`}
             onClick={() => setActiveTab(tab.toLowerCase())}
             style={{
+              userSelect: "none",
               padding: "0.5rem 1.5rem",
               margin: "0 0.5rem",
               border: "none",
@@ -121,6 +123,7 @@ const NavTabs = ({ activeTab, setActiveTab }) => {
             {activeTab === tab.toLowerCase() && (
               <motion.div
                 style={{
+                  userSelect: "none",
                   position: "absolute",
                   bottom: "-2px",
                   left: 0,

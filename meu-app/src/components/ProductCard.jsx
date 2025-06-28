@@ -5,6 +5,7 @@ const ProductCard = ({ name, image }) => {
     <motion.div
       className="product-card"
       style={{
+        userSelect: "none",
         display: "grid",
         backgroundColor: "white",
         borderRadius: "8px",

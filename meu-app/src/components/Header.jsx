@@ -24,11 +24,11 @@ const Header = ({ toggleAbout }) => {
         className="logo-link"
       >
         <img
-          src="logo.png"
+          src="logo.svg"
           alt="bijoux"
           className="logo"
           style={{
-            height: "60px",
+            height: "5rem",
             marginLeft: "-20px", // Ajuste fino para alinhamento visual
           }}
         />

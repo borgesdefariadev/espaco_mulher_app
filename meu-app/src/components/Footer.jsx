@@ -19,7 +19,10 @@ const Footer = () => {
           reservados.
         </p>
         <div className="footer-links" style={{ marginTop: "1rem" }}>
-          <a href="/contato" style={{ color: "white", margin: "0 1rem" }}>
+          <a
+            href="http://wa.me/5521971084546"
+            style={{ color: "white", margin: "0 1rem" }}
+          >
             Contato
           </a>
           <a href="/termos" style={{ color: "white", margin: "0 1rem" }}>

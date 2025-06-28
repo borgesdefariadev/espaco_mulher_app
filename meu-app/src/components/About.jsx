@@ -17,7 +17,8 @@ const About = ({ toggleAbout }) => {
       <motion.div
         className="about-content"
         style={{
-          maxWidth: "800px",
+          minWidth: "50vh",
+          minHeight: "50vh",
           margin: "0 auto",
           backgroundColor: "white",
           padding: "2rem",
@@ -47,7 +48,7 @@ const About = ({ toggleAbout }) => {
         >
           <p style={{ marginBottom: "1rem", lineHeight: "1.6", color: "#555" }}>
             Bem-vindo à Espaço Mulher, onde cada peça conta uma história.
-            Fundada em XXXX, nossa loja se dedica a oferecer jóias finas e
+            Fundada em 2019, nossa loja se dedica a oferecer jóias finas e
             exclusivas, com materiais da mais alta qualidade.
           </p>
           <p style={{ marginBottom: "1rem", lineHeight: "1.6", color: "#555" }}>
