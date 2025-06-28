@@ -15,7 +15,6 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       {" "}
-      {/* Envolva o App com BrowserRouter */}
       <App />
     </BrowserRouter>
   </React.StrictMode>
